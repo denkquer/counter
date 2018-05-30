@@ -3,7 +3,7 @@ let coin;
 let farbe;
 function setup() {
   let blubd = createCanvas(innerWidth, innerHeight);
-	textSize(120);
+	textSize(width/3);
 	farbe = color(random(255),random(255),random(255));
 	textFont("Comic Sans MS");
   
@@ -22,7 +22,7 @@ function draw() {
 	push();
 	fill(255,0,0);
 	textSize(30);
-	text("Sven's kleiner Zähler",width/2-textWidth("Sven's kleiner Zähler")/2,35);
+	//text("Sven's kleiner Zähler",width/2-textWidth("Sven's kleiner Zähler")/2,35);
 	pop();
 	coin = counter.toString();
 	text(counter,width/2-textWidth(coin)/2,height/2+textSize()/4);
